@@ -1,1 +1,105 @@
+/*FONTS ***********************************/
 
+@font-face {
+  font-family: Fredoka_One;
+  src: url(Fonts/Fredoka_One/FredokaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Signika;
+  src: url(Fonts/Signika/static/Signika-Regular.ttf);
+}
+
+@font-face {
+  font-family: Signika2;
+  src: url(Fonts/Signika/static/Signika-Bold.ttf);
+}
+
+/******************************************/
+
+body{
+  display: flex;
+    justify-content: center;
+    background: linear-gradient(
+      to bottom,
+      #151515,
+      #151515 50%,
+      #292929 50%,
+      #292929
+    );
+    background-size: 100% 20px;
+}
+
+h1{
+  font-family: Fredoka_One;
+}
+
+
+#container{
+position: relative;
+top: 100px;
+width: 500px;
+font-family: Signika;
+}
+
+#hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+#hero-image img {
+  width: 250px;
+  height: 250px;
+}
+
+#content-box{
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+ul{
+  position: relative;
+  margin: 40px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  margin: 10px;
+}
+
+a{
+  font-family: Signika2;
+  text-decoration: none;
+  padding: 5px;
+  color: #FFF;
+
+}
+
+a:hover{
+  background: #bec1eb;
+  color: #000;
+}
+
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left:0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  
+}
